@@ -64,7 +64,7 @@ export const copy = {
     macIntro: "MochiLog Mac・Windowsが日次のバッテリー解析ログを集め、スマホで開くだけで受信・記録。さらに、現在の充放電回数や容量を履歴とは別に確認できます。スマホ単体の手動読み込みも、そのまま使えます。",
     macBenefits: [
       "iPhoneに保存されたApple Watchのログにも対応",
-      "MacからiPhone/iPadへ暗号化してまとめて転送",
+      "Mac・WindowsからiPhone/iPadへ暗号化してまとめて転送",
       "現在値の専用タブは設定でオン。値の変化だけを暗号化して転送",
     ],
     macFootnote: "iOS/iPadOS 27、macOS 27・Windows 11向けのベータです。スマホはTestFlight、PC版はGitHubから。日次ログ収集にはロック解除が必要です。現在値は履歴・iCloudに保存しません。一般公開に向けてテスト中です。",
@@ -115,7 +115,7 @@ export const copy = {
       },
       {
         q: "アプリを入れるだけで自動測定できますか？",
-        a: "いいえ。MochiLogはユーザーが読み込んだ解析ログを使います。常時バッテリーを測定したり、他のアプリから解析ログを自動収集したりするものではありません。",
+        a: "通常の記録は読み込んだ解析ログを使います。PC連携ベータでは日次ログの収集・転送と、任意の現在値表示を利用できます。現在値は履歴に保存しません。アプリを入れるだけで有効にはならず、PCの初回設定が必要です。スマホ単体での手動読み込みも使えます。",
       },
       {
         q: "複数ファイルの読み込みについて知りたい。",
@@ -186,7 +186,7 @@ export const copy = {
     macIntro: "MochiLog Mac and Windows collect daily battery logs for you to receive and record when you open the mobile app. An optional tab also shows current cycle count and capacity, separate from history. Manual mobile import remains available without a computer.",
     macBenefits: [
       "Includes paired Apple Watch logs stored on iPhone",
-      "Transfers batches securely from Mac to iPhone or iPad",
+      "Transfers batches securely from Mac or Windows to iPhone or iPad",
       "Keeps physical devices distinct; iCloud sync remains optional",
     ],
     macFootnote: "Beta for iOS/iPadOS 27, macOS 27 and Windows 11. Get the mobile beta from TestFlight and companions from GitHub. Daily log collection needs an unlocked device. Current values are not saved to history or iCloud. Testing continues ahead of the public release.",
