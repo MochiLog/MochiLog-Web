@@ -214,12 +214,17 @@ export const LandingPage = () => {
             {t.macBenefits.map((benefit) => <li key={benefit}>{benefit}</li>)}
           </ul>
           <small>{t.macFootnote}</small>
+          <p className="actions">
+            <a className="text-link" href={TESTFLIGHT}>TestFlight ↗</a>
+            <a className="text-link" href="https://github.com/MochiLog/MochiLog-Mac/releases">Mac ↗</a>
+            <a className="text-link" href="https://github.com/MochiLog/MochiLog-Windows/releases">Windows ↗</a>
+          </p>
         </div>
         <div className="mac-preview-visual" aria-hidden="true">
-          <div className="mac-preview-device">Mac</div>
+          <div className="mac-preview-device">Mac / Windows</div>
           <div className="mac-preview-link" />
           <div className="mac-preview-device">iPhone / iPad</div>
-          <div className="mac-preview-status">Coming soon</div>
+          <div className="mac-preview-status">Beta · Coming soon</div>
         </div>
       </section>
       <section className="privacy-band">

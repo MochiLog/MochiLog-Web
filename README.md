@@ -147,3 +147,5 @@ Worker名は `mochilog-web`。設定は [wrangler.toml](wrangler.toml) にあり
 The MochiLog product website is built with Hono and React server rendering on Cloudflare Workers. It includes Japanese and English pages for features, getting started, support, privacy, and terms. Menus, FAQs, and the illustrative battery-history preview work without client-side React hydration.
 
 The redesign has been integrated into main and is available at the preview link above. Merging into main and switching Cloudflare production traffic are separate operations. Unreleased app features are marked as in development. Use `pnpm build` for a dry-run build, `pnpm test` for checks, and `pnpm run deploy` only when publishing to production.
+
+現在のバッテリー表示ベータの概要・既定オフ・履歴非保存・対応PC版の案内をトップと利用ガイドに掲載しています。利用規約／プライバシーポリシーはアプリ内と同じ機能開示を含みます。

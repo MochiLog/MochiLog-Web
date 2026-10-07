@@ -59,15 +59,15 @@ export const copy = {
         text: "ペアリングしたApple Watchに記録を転送。iPhoneで読み込んだデバイスの状態を閲覧できます。Watch自体を常時測定する機能ではありません。",
       },
     ],
-    macKicker: "COMING SOON · MAC連携ベータ",
+    macKicker: "ベータテスト中 · PC連携",
     macTitle: "ログを探す時間を、\n記録を見る時間に。",
-    macIntro: "MochiLog Macが、ロック解除中のiPhoneやiPadからバッテリー解析ログを収集。アプリを開いたときに同じWi-Fiで受け取り、端末上で解析・記録できます。",
+    macIntro: "MochiLog Mac・Windowsが日次のバッテリー解析ログを集め、スマホで開くだけで受信・記録。さらに、現在の充放電回数や容量を履歴とは別に確認できます。スマホ単体の手動読み込みも、そのまま使えます。",
     macBenefits: [
       "iPhoneに保存されたApple Watchのログにも対応",
       "MacからiPhone/iPadへ暗号化してまとめて転送",
-      "個体ごとの履歴を区別し、iCloud同期は任意で利用",
+      "現在値の専用タブは設定でオン。値の変化だけを暗号化して転送",
     ],
-    macFootnote: "iOS/iPadOS 27・macOS 27以降向けに開発中です。初回ペアリングとログ収集には条件があります。一般公開はまだ行っていません。",
+    macFootnote: "iOS/iPadOS 27、macOS 27・Windows 11向けのベータです。スマホはTestFlight、PC版はGitHubから。日次ログ収集にはロック解除が必要です。現在値は履歴・iCloudに保存しません。一般公開に向けてテスト中です。",
     privacyKicker: "PRIVATE BY DESIGN",
     privacyTitle: "解析は、あなたの端末で。",
     privacyText:
@@ -181,15 +181,15 @@ export const copy = {
         text: "Send records to your paired Apple Watch and view the devices imported on your iPhone. This does not continuously measure the Watch’s own battery.",
       },
     ],
-    macKicker: "COMING SOON · MAC TRANSFER BETA",
+    macKicker: "BETA TESTING · PC TRANSFER",
     macTitle: "Less time finding logs.\nMore time seeing the story.",
-    macIntro: "MochiLog Mac will collect battery analytics logs from an unlocked iPhone or iPad. Open the mobile app to receive them over the same Wi-Fi network, then analyze and save records on your device.",
+    macIntro: "MochiLog Mac and Windows collect daily battery logs for you to receive and record when you open the mobile app. An optional tab also shows current cycle count and capacity, separate from history. Manual mobile import remains available without a computer.",
     macBenefits: [
       "Includes paired Apple Watch logs stored on iPhone",
       "Transfers batches securely from Mac to iPhone or iPad",
       "Keeps physical devices distinct; iCloud sync remains optional",
     ],
-    macFootnote: "In development for iOS/iPadOS 27 and macOS 27 or later. Initial pairing and log collection have requirements. This feature is not publicly available yet.",
+    macFootnote: "Beta for iOS/iPadOS 27, macOS 27 and Windows 11. Get the mobile beta from TestFlight and companions from GitHub. Daily log collection needs an unlocked device. Current values are not saved to history or iCloud. Testing continues ahead of the public release.",
     privacyKicker: "PRIVATE BY DESIGN",
     privacyTitle: "Your logs. Your device.",
     privacyText:
@@ -238,7 +238,7 @@ export const copy = {
       },
       {
         q: "Does MochiLog measure my battery automatically?",
-        a: "No. MochiLog uses analytics logs you import. It does not continuously measure the battery or automatically collect analytics logs from other apps.",
+        a: "Normal records use imported Analytics logs. The companion beta can collect and transfer daily logs and offers an optional current-values view. Current values are not saved as history. Manual import still works on mobile without a computer.",
       },
       {
         q: "Can I import multiple files?",
