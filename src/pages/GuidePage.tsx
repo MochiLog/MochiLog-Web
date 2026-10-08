@@ -84,6 +84,14 @@ export function GuidePage() {
           ? "スマホの新しい4.0.0ベータ、MochiLog Mac 0.2.14／Windows 0.1.11以降が必要です。Windowsは11のみ対応し、初回USB信頼設定にはApple DevicesまたはApple公式のクラシック版iTunesを使用します。日次ログの収集にはロック解除が必要です。現在値の取得もOSや接続状態で失敗する場合があり、日次ログやAppleの公式診断と同じ意味ではありません。"
           : "Use the new mobile 4.0.0 beta with MochiLog Mac 0.2.14 or Windows 0.1.11 or later. Windows 11 is required; initial USB trust uses Apple Devices or classic iTunes from Apple. Daily-log collection requires an unlocked device. Current-value acquisition can also fail depending on OS and connectivity, and is separate from daily logs or official Apple diagnosis."}</p>
       </section>
+      <section>
+        <h2>{ja ? "複数端末のログも、元の端末のまま。" : "Logs from other devices, with their original identity."}</h2>
+        <p>{ja
+          ? "開発中の複数端末共有では、同じPCとペアリングしたiPhone・iPadについて、双方のiCloud同期がオン・同じApple Accountと確認できた場合だけ、ほかの端末のログも暗号化して受信します。3台・4台でも受信先ごとに確認します。同期オフ・別アカウント・未確認なら共有しません。共有元のアプリをしばらく開いていない場合は確認まで保留します。PC側で削除済みのログは復元しません。"
+          : "In the multi-device sharing feature under development, iPhone and iPad paired with the same computer can receive each other’s logs encrypted only when both have iCloud sync enabled and the same Apple Account is confirmed. The rule applies per recipient with three or four devices too. Sync off, different accounts or unconfirmed settings prevent sharing. If the source app has not been opened recently, sharing waits for confirmation. Logs already deleted on the computer cannot be recovered."}</p>
+        <p>{ja ? "元の端末の個体IDを保持し、同じログの二重転送・二重記録を防ぎます。ほかの端末が受信しても、元端末向けの未転送ログは保護します。ログ収集と現在のバッテリー情報は独立して動作します。"
+          : "Source device identities are preserved, and duplicate transfers and records are avoided. Another recipient’s acknowledgement protects the source’s pending queue. Log collection and current battery acquisition run independently."}</p>
+      </section>
       {sections.map(([title, text]) => (
         <section className="guide-article" key={title}>
           <h2>{title}</h2>
