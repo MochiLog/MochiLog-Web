@@ -85,6 +85,15 @@ export function GuidePage() {
           : "Use the new mobile 4.0.0 beta with MochiLog Mac 0.2.14 or Windows 0.1.11 or later. Windows 11 is required; initial USB trust uses Apple Devices or classic iTunes from Apple. Daily-log collection requires an unlocked device. Current-value acquisition can also fail depending on OS and connectivity, and is separate from daily logs or official Apple diagnosis."}</p>
       </section>
       <section>
+        <h2>{ja ? "自動ログ収集を、自分の使い方で。" : "Choose how to collect your logs."}</h2>
+        <p>{ja ? "設定 → 自動ログ収集にPC連携と端末内取得をまとめました。それぞれ独立して切り替えられます。端末内取得は初期状態でオフの実験機能です。対応するローカルVPN／リフレクター経路で自分の端末の診断サービスへ接続します。最新版の認証済みPCから、自分の端末のOSペアリングを明示的に引き継ぐか、RPPairingファイルを読み込みます。初期OS信頼設定と対応経路が必要です。iOS/iPadOS 27以降で、アプリを開いている間に使います。"
+          : "Settings → Automatic Log Collection contains independent PC and on-device options. On-device acquisition is experimental and off by default. It connects to your own diagnostic service through a compatible local VPN/reflector route. Explicitly reuse your own OS pairing from an updated authenticated computer, or import an RPPairing file. Initial OS trust and a compatible route are required. Use iOS/iPadOS 27 or later with the app open."}</p>
+        <p>{ja ? "LocalDevVPNは別アプリです。MochiLogのQRだけでAppleの信頼設定は作れません。初回設定の完全無線化・Developer Modeオフ・バックグラウンドでの取得は保証しません。両方式で同じログが届いても共通の取り込み処理で重複を避けます。"
+          : "LocalDevVPN is a separate app. A MochiLog QR alone cannot establish Apple OS trust. Fully wireless initial setup, Developer Mode-off operation and background acquisition are not guaranteed. Both paths use the same import queue to avoid duplicates."}</p>
+        <p>{ja ? "双方のiCloud同期と同じApple Accountが確認できた場合は、同じPCの他の端末の現在のバッテリー値も確認できます。PCの自動更新確認は初期状態でオフで、最初の選択画面や設定で有効にできます。これらの追加機能にはMochiLog 4.0.0 (1041)、Mac 0.2.20／Windows 0.1.17以降が必要です。"
+          : "Confirmed iCloud sync on both devices and the same Apple Account also allow current battery readings from other devices paired with the same PC. PC automatic update checks are off by default and can be enabled in the initial prompt or settings. These additions require MochiLog 4.0.0 (1041), Mac 0.2.20 or Windows 0.1.17 or later."}</p>
+      </section>
+      <section>
         <h2>{ja ? "複数端末のログも、元の端末のまま。" : "Logs from other devices, with their original identity."}</h2>
         <p>{ja
           ? "開発中の複数端末共有では、同じPCとペアリングしたiPhone・iPadについて、双方のiCloud同期がオン・同じApple Accountと確認できた場合だけ、ほかの端末のログも暗号化して受信します。3台・4台でも受信先ごとに確認します。同期オフ・別アカウント・未確認なら共有しません。共有元のアプリをしばらく開いていない場合は確認まで保留します。PC側で削除済みのログは復元しません。"
