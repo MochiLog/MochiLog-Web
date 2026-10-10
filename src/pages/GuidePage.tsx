@@ -102,6 +102,8 @@ export function GuidePage() {
           : "In the multi-device sharing feature under development, iPhone and iPad paired with the same computer can receive each other’s logs encrypted only when both have iCloud sync enabled and the same Apple Account is confirmed. The rule applies per recipient with three or four devices too. Sync off, different accounts or unconfirmed settings prevent sharing. If the source app has not been opened recently, sharing waits for confirmation. Logs already deleted on the computer cannot be recovered."}</p>
         <p>{ja ? "元の端末の個体IDを保持し、同じログの二重転送・二重記録を防ぎます。ほかの端末が受信しても、元端末向けの未転送ログは保護します。ログ収集と現在のバッテリー情報は独立して動作します。"
           : "Source device identities are preserved, and duplicate transfers and records are avoided. Another recipient’s acknowledgement protects the source’s pending queue. Log collection and current battery acquisition run independently."}</p>
+        <p>{ja ? "複数端末共有を使う場合は、MochiLog 4.0.0ベータ1052以降とMac 0.2.25／Windows 0.1.23以降へ更新してください。ログに機種情報がない場合も、認証した取得元の端末から機種を確認します。確認できた過去の取り違え記録は、日付・記録ID・実測値を保って訂正します。ペアリングのやり直しは不要です。"
+          : "For multi-device sharing, update to MochiLog 4.0.0 beta 1052 or later and Mac 0.2.25 or Windows 0.1.23 or later. When a log omits its model, the authenticated source device supplies it. Verified older records with the wrong model are corrected while preserving dates, record IDs and measurements. Existing pairing is retained."}</p>
       </section>
       {sections.map(([title, text]) => (
         <section className="guide-article" key={title}>
