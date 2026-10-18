@@ -12,7 +12,9 @@ export const TermsOfService = () => {
 
         {t.terms.articles.map((a) => (
           <section key={a.id} className="policy-section">
-            <h2>{a.id}. {a.title}</h2>
+            <h2>
+              {a.id}. {a.title}
+            </h2>
             {a.paragraphs.map((p: string, i: number) => (
               <p key={i}>{p}</p>
             ))}

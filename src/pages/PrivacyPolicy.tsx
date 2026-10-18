@@ -4,7 +4,8 @@ import { useLocaleContext } from "../i18n";
 export const PrivacyPolicy = () => {
   const { t, locale } = useLocaleContext();
 
-  const sectionTitles = locale === "en"
+  const sectionTitles =
+    locale === "en"
       ? [
           "Data processed",
           "Optional sync and transfer",

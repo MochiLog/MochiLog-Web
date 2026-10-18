@@ -23,25 +23,16 @@ export function Layout({
   const nav = (
     <>
       <a href={`/?lang=${locale}#features`}>{t.nav[0]}</a>
-      <a
-        href={`/guide?lang=${locale}`}
-        aria-current={path === "/guide" ? "page" : undefined}
-      >
+      <a href={`/guide?lang=${locale}`} aria-current={path === "/guide" ? "page" : undefined}>
         {t.nav[1]}
       </a>
-      <a
-        href={`/support?lang=${locale}`}
-        aria-current={path === "/support" ? "page" : undefined}
-      >
+      <a href={`/support?lang=${locale}`} aria-current={path === "/support" ? "page" : undefined}>
         {t.nav[2]}
       </a>
     </>
   );
   const language = (
-    <div
-      className="locale-nav"
-      aria-label={locale === "ja" ? "表示言語" : "Language"}
-    >
+    <div className="locale-nav" aria-label={locale === "ja" ? "表示言語" : "Language"}>
       <a
         href={`${path}?lang=ja`}
         lang="ja"
@@ -69,40 +60,19 @@ export function Layout({
           <title>{title}</title>
           <meta name="description" content={description ?? t.description} />
           <meta name="theme-color" content="#f6f8f3" />
-          <meta
-            name="robots"
-            content={noIndex ? "noindex, follow" : "index, follow"}
-          />
+          <meta name="robots" content={noIndex ? "noindex, follow" : "index, follow"} />
           <link rel="canonical" href={canonical} />
-          <link
-            rel="alternate"
-            hrefLang="ja"
-            href={`${SITE_URL}${path}?lang=ja`}
-          />
-          <link
-            rel="alternate"
-            hrefLang="en"
-            href={`${SITE_URL}${path}?lang=en`}
-          />
-          <link
-            rel="alternate"
-            hrefLang="x-default"
-            href={`${SITE_URL}${path}`}
-          />
+          <link rel="alternate" hrefLang="ja" href={`${SITE_URL}${path}?lang=ja`} />
+          <link rel="alternate" hrefLang="en" href={`${SITE_URL}${path}?lang=en`} />
+          <link rel="alternate" hrefLang="x-default" href={`${SITE_URL}${path}`} />
           <link rel="icon" type="image/png" href="/app-icon.png" />
           <link rel="apple-touch-icon" href="/app-icon.png" />
           <meta property="og:title" content={title} />
-          <meta
-            property="og:description"
-            content={description ?? t.description}
-          />
+          <meta property="og:description" content={description ?? t.description} />
           <meta property="og:url" content={canonical} />
           <meta property="og:type" content="website" />
           <meta property="og:site_name" content="MochiLog" />
-          <meta
-            property="og:locale"
-            content={locale === "ja" ? "ja_JP" : "en_US"}
-          />
+          <meta property="og:locale" content={locale === "ja" ? "ja_JP" : "en_US"} />
           <meta property="og:image" content={`${SITE_URL}/ogp.jpeg`} />
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:image" content={`${SITE_URL}/ogp.jpeg`} />
@@ -139,9 +109,7 @@ export function Layout({
               </a>
               <nav
                 className="desktop-nav"
-                aria-label={
-                  locale === "ja" ? "メインナビゲーション" : "Main navigation"
-                }
+                aria-label={locale === "ja" ? "メインナビゲーション" : "Main navigation"}
               >
                 {nav}
               </nav>
@@ -151,13 +119,7 @@ export function Layout({
                   {t.menu}
                   <span aria-hidden="true">＋</span>
                 </summary>
-                <nav
-                  aria-label={
-                    locale === "ja"
-                      ? "モバイルナビゲーション"
-                      : "Mobile navigation"
-                  }
-                >
+                <nav aria-label={locale === "ja" ? "モバイルナビゲーション" : "Mobile navigation"}>
                   {nav}
                   {language}
                 </nav>

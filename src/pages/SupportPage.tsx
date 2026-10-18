@@ -5,9 +5,7 @@ export function SupportPage() {
   return (
     <article>
       <p className="eyebrow">SUPPORT</p>
-      <h1>
-        {ja ? "困ったときは、ここから。" : "A little help, when you need it."}
-      </h1>
+      <h1>{ja ? "困ったときは、ここから。" : "A little help, when you need it."}</h1>
       <p className="guide-lead">
         {ja
           ? "ログの取り込みや表示で困ったとき、改善のアイデアがあるときは、お気軽にご連絡ください。"
@@ -21,25 +19,17 @@ export function SupportPage() {
               ? "解析ログの探し方と、表示される数値の読み方をまとめています。"
               : "Find an analytics log and learn how to read the values MochiLog displays."}
           </p>
-          <a href={`/guide?lang=${locale}`}>
-            {ja ? "ガイドを見る" : "Read the guide"} →
-          </a>
+          <a href={`/guide?lang=${locale}`}>{ja ? "ガイドを見る" : "Read the guide"} →</a>
         </article>
         <article>
           <h2>{ja ? "メールで問い合わせる" : "Contact by email"}</h2>
           <p>{t.common.contactEmail}</p>
-          <a
-            href={`mailto:${t.common.contactEmail}?subject=MochiLog%20support`}
-          >
+          <a href={`mailto:${t.common.contactEmail}?subject=MochiLog%20support`}>
             {ja ? "メールを作成" : "Compose an email"} ↗
           </a>
         </article>
       </div>
-      <h2>
-        {ja
-          ? "不具合の報告に添えてほしいこと"
-          : "What to include in a bug report"}
-      </h2>
+      <h2>{ja ? "不具合の報告に添えてほしいこと" : "What to include in a bug report"}</h2>
       <ul>
         {(ja
           ? [

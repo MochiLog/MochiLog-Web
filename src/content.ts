@@ -61,13 +61,15 @@ export const copy = {
     ],
     macKicker: "ベータテスト中 · PC連携",
     macTitle: "ログを探す時間を、\n記録を見る時間に。",
-    macIntro: "MochiLog Mac・Windowsが日次のバッテリー解析ログを集め、スマホで開くだけで受信・記録。さらに、現在の充放電回数や容量を履歴とは別に確認できます。スマホ単体の手動読み込みも、そのまま使えます。",
+    macIntro:
+      "MochiLog Mac・Windowsが日次のバッテリー解析ログを集め、スマホで開くだけで受信・記録。さらに、現在の充放電回数や容量を履歴とは別に確認できます。スマホ単体の手動読み込みも、そのまま使えます。",
     macBenefits: [
       "iPhoneに保存されたApple Watchのログにも対応",
       "Mac・WindowsからiPhone/iPadへ暗号化してまとめて転送",
       "現在値の専用タブは設定でオン。値の変化だけを暗号化して転送",
     ],
-    macFootnote: "iOS/iPadOS 27、macOS 27・Windows 11向けのベータです。スマホはTestFlight、PC版はGitHubから。日次ログ収集にはロック解除が必要です。現在値は履歴・iCloudに保存しません。一般公開に向けてテスト中です。",
+    macFootnote:
+      "iOS/iPadOS 27、macOS 27・Windows 11向けのベータです。スマホはTestFlight、PC版はGitHubから。日次ログ収集にはロック解除が必要です。現在値は履歴・iCloudに保存しません。一般公開に向けてテスト中です。",
     privacyKicker: "PRIVATE BY DESIGN",
     privacyTitle: "解析は、あなたの端末で。",
     privacyText:
@@ -75,8 +77,7 @@ export const copy = {
     privacyLink: "データの扱いについて",
     howKicker: "GETTING STARTED",
     howTitle: "最初の記録まで、3ステップ。",
-    howIntro:
-      "まずは最新の解析ログをひとつ。アプリ内のチュートリアルでも確認できます。",
+    howIntro: "まずは最新の解析ログをひとつ。アプリ内のチュートリアルでも確認できます。",
     steps: [
       {
         title: "解析ログを見つける",
@@ -95,8 +96,7 @@ export const copy = {
     nextTitle: "次のアップデートに向けて。",
     nextText:
       "複数ログの取り込み改善、画面サイズに応じた表示、8言語と言語設定を開発中です。公開版への提供時期は未定です。",
-    languages:
-      "日本語 / English / 简体中文 / 繁體中文 / 한국어 / Español / Français / Deutsch",
+    languages: "日本語 / English / 简体中文 / 繁體中文 / 한국어 / Español / Français / Deutsch",
     beta: "TestFlightを確認",
     betaNote: "ベータ版の内容・参加枠は配信状況によって異なります。",
     faqTitle: "気になること、先に確認。",
@@ -183,13 +183,15 @@ export const copy = {
     ],
     macKicker: "BETA TESTING · PC TRANSFER",
     macTitle: "Less time finding logs.\nMore time seeing the story.",
-    macIntro: "MochiLog Mac and Windows collect daily battery logs for you to receive and record when you open the mobile app. An optional tab also shows current cycle count and capacity, separate from history. Manual mobile import remains available without a computer.",
+    macIntro:
+      "MochiLog Mac and Windows collect daily battery logs for you to receive and record when you open the mobile app. An optional tab also shows current cycle count and capacity, separate from history. Manual mobile import remains available without a computer.",
     macBenefits: [
       "Includes paired Apple Watch logs stored on iPhone",
       "Transfers batches securely from Mac or Windows to iPhone or iPad",
       "Keeps physical devices distinct; iCloud sync remains optional",
     ],
-    macFootnote: "Beta for iOS/iPadOS 27, macOS 27 and Windows 11. Get the mobile beta from TestFlight and companions from GitHub. Daily log collection needs an unlocked device. Current values are not saved to history or iCloud. Testing continues ahead of the public release.",
+    macFootnote:
+      "Beta for iOS/iPadOS 27, macOS 27 and Windows 11. Get the mobile beta from TestFlight and companions from GitHub. Daily log collection needs an unlocked device. Current values are not saved to history or iCloud. Testing continues ahead of the public release.",
     privacyKicker: "PRIVATE BY DESIGN",
     privacyTitle: "Your logs. Your device.",
     privacyText:
@@ -197,8 +199,7 @@ export const copy = {
     privacyLink: "How your data is handled",
     howKicker: "GETTING STARTED",
     howTitle: "Your first record, in 3 steps.",
-    howIntro:
-      "Start with one recent analytics log. An in-app tutorial helps you along the way.",
+    howIntro: "Start with one recent analytics log. An in-app tutorial helps you along the way.",
     steps: [
       {
         title: "Find an analytics log",
@@ -217,11 +218,9 @@ export const copy = {
     nextTitle: "More ways to make it yours.",
     nextText:
       "We’re improving multi-log imports, layouts across screen sizes, and support for eight languages with an in-app language setting. A public release date has not been announced.",
-    languages:
-      "日本語 / English / 简体中文 / 繁體中文 / 한국어 / Español / Français / Deutsch",
+    languages: "日本語 / English / 简体中文 / 繁體中文 / 한국어 / Español / Français / Deutsch",
     beta: "Check TestFlight",
-    betaNote:
-      "Beta features and available places depend on the current distribution.",
+    betaNote: "Beta features and available places depend on the current distribution.",
     faqTitle: "A few things worth knowing.",
     faqs: [
       {

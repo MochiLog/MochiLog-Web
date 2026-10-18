@@ -3,9 +3,7 @@ import AxeBuilder from "@axe-core/playwright";
 
 for (const lang of ["ja", "en"]) {
   for (const width of [320, 390, 768, 1024, 1440]) {
-    test(`${lang}: all pages fit ${width}px without JavaScript`, async ({
-      browser,
-    }) => {
+    test(`${lang}: all pages fit ${width}px without JavaScript`, async ({ browser }) => {
       const context = await browser.newContext({
         viewport: { width, height: 1000 },
         javaScriptEnabled: false,
@@ -13,25 +11,19 @@ for (const lang of ["ja", "en"]) {
       });
       const page = await context.newPage();
       for (const path of ["/", "/guide", "/privacy", "/terms", "/support"]) {
-        const response = await page.goto(
-          `${test.info().project.use.baseURL}${path}?lang=${lang}`,
-        );
+        const response = await page.goto(`${test.info().project.use.baseURL}${path}?lang=${lang}`);
         expect(response?.status()).toBe(200);
         await expect(page.locator("html")).toHaveAttribute("lang", lang);
         await expect(page.locator("h1")).toHaveCount(1);
         await expect(page.locator("main")).toBeVisible();
-        expect(
-          await page.evaluate(
-            () => document.documentElement.scrollWidth <= innerWidth,
-          ),
-        ).toBe(true);
+        expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(
+          true,
+        );
         await expect(page.locator('link[rel="canonical"]')).toHaveAttribute(
           "href",
           `https://mochilog.ryuya-dev.net${path}?lang=${lang}`,
         );
-        expect(await page.title()).not.toContain(
-          lang === "en" ? "プライバシー" : "Privacy Policy",
-        );
+        expect(await page.title()).not.toContain(lang === "en" ? "プライバシー" : "Privacy Policy");
       }
       await context.close();
     });
@@ -56,22 +48,16 @@ test("sample controls and FAQ work without hydration", async ({ page }) => {
   await expect(page.locator("html")).toHaveAttribute("lang", "en");
 });
 
-test("mobile menu preserves route when switching languages", async ({
-  page,
-}) => {
+test("mobile menu preserves route when switching languages", async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 844 });
   await page.goto("/guide?lang=ja");
   await page.locator(".mobile-menu > summary").click();
   await page.locator(".mobile-menu a[lang=en]").click();
   await expect(page).toHaveURL(/\/guide\?lang=en$/);
-  await expect(page.locator("h1")).toHaveText(
-    "Start with a log. Build a history.",
-  );
+  await expect(page.locator("h1")).toHaveText("Start with a log. Build a history.");
 });
 
-test("locale negotiation, sitemap, status codes and asset delivery", async ({
-  request,
-}) => {
+test("locale negotiation, sitemap, status codes and asset delivery", async ({ request }) => {
   for (const [header, lang] of [
     ["fr;q=1,en-US;q=.8,ja;q=.4", "en"],
     ["en;q=0,ja;q=1", "ja"],
@@ -92,12 +78,7 @@ test("locale negotiation, sitemap, status codes and asset delivery", async ({
   expect(await missing.text()).toContain("noindex, follow");
   const sitemap = await request.get("/sitemap.xml");
   expect((await sitemap.text()).match(/<loc>/g)).toHaveLength(10);
-  for (const asset of [
-    "/styles.css",
-    "/app-icon.png",
-    "/robots.txt",
-    "/ogp.jpeg",
-  ])
+  for (const asset of ["/styles.css", "/app-icon.png", "/robots.txt", "/ogp.jpeg"])
     expect((await request.get(asset)).status()).toBe(200);
 });
 
@@ -117,9 +98,7 @@ test("desktop, mobile and dark screenshots", async ({ page }) => {
   }
 });
 
-test("all pages pass accessibility checks in light and dark", async ({
-  page,
-}) => {
+test("all pages pass accessibility checks in light and dark", async ({ page }) => {
   for (const colorScheme of ["light", "dark"] as const) {
     await page.emulateMedia({ colorScheme });
     for (const path of ["/", "/guide", "/privacy", "/terms", "/support"]) {

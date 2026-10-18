@@ -206,18 +206,29 @@ export const LandingPage = () => {
           <p className="eyebrow">{t.macKicker}</p>
           <h2 id="mac-preview-title">
             {t.macTitle.split("\n").map((line, index) => (
-              <span key={line}>{index > 0 && <br />}{line}</span>
+              <span key={line}>
+                {index > 0 && <br />}
+                {line}
+              </span>
             ))}
           </h2>
           <p>{t.macIntro}</p>
           <ul>
-            {t.macBenefits.map((benefit) => <li key={benefit}>{benefit}</li>)}
+            {t.macBenefits.map((benefit) => (
+              <li key={benefit}>{benefit}</li>
+            ))}
           </ul>
           <small>{t.macFootnote}</small>
           <p className="actions">
-            <a className="text-link" href={TESTFLIGHT}>TestFlight ↗</a>
-            <a className="text-link" href="https://github.com/MochiLog/MochiLog-Mac/releases">Mac ↗</a>
-            <a className="text-link" href="https://github.com/MochiLog/MochiLog-Windows/releases">Windows ↗</a>
+            <a className="text-link" href={TESTFLIGHT}>
+              TestFlight ↗
+            </a>
+            <a className="text-link" href="https://github.com/MochiLog/MochiLog-Mac/releases">
+              Mac ↗
+            </a>
+            <a className="text-link" href="https://github.com/MochiLog/MochiLog-Windows/releases">
+              Windows ↗
+            </a>
           </p>
         </div>
         <div className="mac-preview-visual" aria-hidden="true">

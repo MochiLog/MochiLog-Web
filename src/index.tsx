@@ -26,10 +26,7 @@ export function requestLocale(url: URL, acceptLanguage = ""): Locale {
     })
     .filter((v) => Number.isFinite(v.weight) && v.weight > 0 && v.weight <= 1)
     .sort((a, b) => b.weight - a.weight || a.index - b.index);
-  return (
-    (preferred.find((v) => v.tag === "ja" || v.tag === "en")?.tag as Locale) ||
-    "ja"
-  );
+  return (preferred.find((v) => v.tag === "ja" || v.tag === "en")?.tag as Locale) || "ja";
 }
 
 const pages: {
@@ -99,10 +96,7 @@ app.use("*", async (c, next) => {
 });
 for (const page of pages)
   app.get(page.path, (c) => {
-    const locale = requestLocale(
-      new URL(c.req.url),
-      c.req.header("Accept-Language"),
-    );
+    const locale = requestLocale(new URL(c.req.url), c.req.header("Accept-Language"));
     c.header("Vary", "Accept-Language");
     const Page = page.component;
     return c.html(
@@ -128,25 +122,13 @@ app.get("/sitemap.xml", (c) =>
   ),
 );
 app.notFound((c) => {
-  const locale = requestLocale(
-    new URL(c.req.url),
-    c.req.header("Accept-Language"),
-  );
+  const locale = requestLocale(new URL(c.req.url), c.req.header("Accept-Language"));
   return c.html(
     "<!doctype html>" +
       renderToStaticMarkup(
-        <Layout
-          locale={locale}
-          title="404 — MochiLog"
-          path={c.req.path}
-          noIndex
-        >
+        <Layout locale={locale} title="404 — MochiLog" path={c.req.path} noIndex>
           <p className="eyebrow">404</p>
-          <h1>
-            {locale === "ja"
-              ? "ページが見つかりません。"
-              : "This page could not be found."}
-          </h1>
+          <h1>{locale === "ja" ? "ページが見つかりません。" : "This page could not be found."}</h1>
           <a className="button primary" href={`/?lang=${locale}`}>
             {locale === "ja" ? "トップへ戻る" : "Back to home"}
           </a>

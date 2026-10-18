@@ -28,8 +28,7 @@ body {
   background: var(--bg);
   color: var(--text);
   font-family:
-    Inter, "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Noto Sans JP",
-    Meiryo, sans-serif;
+    Inter, "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Noto Sans JP", Meiryo, sans-serif;
   line-height: 1.75;
   -webkit-font-smoothing: antialiased;
 }
@@ -567,7 +566,11 @@ a[aria-current="page"] {
   left: 0;
   color: var(--accent);
 }
-.mac-preview small { color: var(--muted); line-height: 1.8; display: block; }
+.mac-preview small {
+  color: var(--muted);
+  line-height: 1.8;
+  display: block;
+}
 .mac-preview-visual {
   min-height: 340px;
   border-radius: 24px;
@@ -587,19 +590,27 @@ a[aria-current="page"] {
   border: 1px solid var(--border);
   text-align: center;
   font-weight: 700;
-  box-shadow: 0 12px 30px rgba(0,0,0,.04);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.04);
 }
-.mac-preview-link { width: 2px; height: 32px; background: var(--accent); }
+.mac-preview-link {
+  width: 2px;
+  height: 32px;
+  background: var(--accent);
+}
 .mac-preview-status {
   color: var(--accent);
-  font-size: .72rem;
+  font-size: 0.72rem;
   font-weight: 750;
-  letter-spacing: .11em;
+  letter-spacing: 0.11em;
   text-transform: uppercase;
 }
 @media (max-width: 720px) {
-  .mac-preview { grid-template-columns: 1fr; }
-  .mac-preview-visual { min-height: 260px; }
+  .mac-preview {
+    grid-template-columns: 1fr;
+  }
+  .mac-preview-visual {
+    min-height: 260px;
+  }
 }
 .privacy-band {
   background: #1a382b;
