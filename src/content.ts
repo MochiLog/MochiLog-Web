@@ -66,7 +66,7 @@ export const copy = {
     macBenefits: [
       "iPhoneに保存されたApple Watchのログにも対応",
       "Mac・WindowsからiPhone/iPadへ暗号化してまとめて転送",
-      "現在値の専用タブは設定でオン。値の変化だけを暗号化して転送",
+      "現在のバッテリータブは設定でオンに。日々の記録と分けて確認",
     ],
     macFootnote:
       "PC版1.0.0をGitHubで公開。スマホ4.0.0はApp Storeへの審査提出準備中で、現在はTestFlightから利用できます。PC連携はiOS/iPadOS 27、macOS 27・Windows 11が対象です。日次ログ収集にはロック解除が必要です。現在値は履歴・iCloudに保存しません。",
@@ -188,7 +188,7 @@ export const copy = {
     macBenefits: [
       "Includes paired Apple Watch logs stored on iPhone",
       "Transfers batches securely from Mac or Windows to iPhone or iPad",
-      "Keeps physical devices distinct; iCloud sync remains optional",
+      "Switch on Live Battery in settings to see current readings separately from history",
     ],
     macFootnote:
       "PC 1.0.0 is available on GitHub. Mobile 4.0.0 is being prepared for App Store review and is currently available through TestFlight. PC Transfer requires iOS/iPadOS 27, macOS 27 or Windows 11. Daily log collection needs an unlocked device. Current values are not saved to history or iCloud.",
