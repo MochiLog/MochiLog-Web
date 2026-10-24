@@ -59,7 +59,7 @@ export const copy = {
         text: "ペアリングしたApple Watchに記録を転送。iPhoneで読み込んだデバイスの状態を閲覧できます。Watch自体を常時測定する機能ではありません。",
       },
     ],
-    macKicker: "ベータテスト中 · PC連携",
+    macKicker: "PC版 1.0.0 · 自動ログ収集",
     macTitle: "ログを探す時間を、\n記録を見る時間に。",
     macIntro:
       "MochiLog Mac・Windowsが日次のバッテリー解析ログを集め、スマホで開くだけで受信・記録。さらに、現在の充放電回数や容量を履歴とは別に確認できます。スマホ単体の手動読み込みも、そのまま使えます。",
@@ -69,7 +69,7 @@ export const copy = {
       "現在値の専用タブは設定でオン。値の変化だけを暗号化して転送",
     ],
     macFootnote:
-      "iOS/iPadOS 27、macOS 27・Windows 11向けのベータです。スマホはTestFlight、PC版はGitHubから。日次ログ収集にはロック解除が必要です。現在値は履歴・iCloudに保存しません。一般公開に向けてテスト中です。",
+      "PC版1.0.0をGitHubで公開。スマホ4.0.0はApp Storeへの審査提出準備中で、現在はTestFlightから利用できます。PC連携はiOS/iPadOS 27、macOS 27・Windows 11が対象です。日次ログ収集にはロック解除が必要です。現在値は履歴・iCloudに保存しません。",
     privacyKicker: "PRIVATE BY DESIGN",
     privacyTitle: "解析は、あなたの端末で。",
     privacyText:
@@ -92,10 +92,10 @@ export const copy = {
         text: "容量・サイクルなどを確認して保存。日付の異なるログが増えると、グラフで変化を追えます。",
       },
     ],
-    nextKicker: "IN DEVELOPMENT",
-    nextTitle: "次のアップデートに向けて。",
+    nextKicker: "MOCHILOG 4.0.0",
+    nextTitle: "記録も、自動収集も。",
     nextText:
-      "複数ログの取り込み改善、画面サイズに応じた表示、8言語と言語設定を開発中です。公開版への提供時期は未定です。",
+      "4.0.0では自動ログ収集、現在のバッテリー表示、記録の複数選択削除を追加。App Storeへの審査提出準備中です。8言語で利用でき、スマホ単体でも使えます。",
     languages: "日本語 / English / 简体中文 / 繁體中文 / 한국어 / Español / Français / Deutsch",
     beta: "TestFlightを確認",
     betaNote: "ベータ版の内容・参加枠は配信状況によって異なります。",
@@ -115,7 +115,7 @@ export const copy = {
       },
       {
         q: "アプリを入れるだけで自動測定できますか？",
-        a: "通常の記録は読み込んだ解析ログを使います。PC連携ベータでは日次ログの収集・転送と、任意の現在値表示を利用できます。現在値は履歴に保存しません。アプリを入れるだけで有効にはならず、PCの初回設定が必要です。スマホ単体での手動読み込みも使えます。",
+        a: "通常の記録は読み込んだ解析ログを使います。PC連携では日次ログの収集・転送と、任意の現在値表示を利用できます。現在値は履歴に保存しません。アプリを入れるだけで有効にはならず、PCの初回設定が必要です。スマホ単体での手動読み込みも使えます。",
       },
       {
         q: "複数ファイルの読み込みについて知りたい。",
@@ -181,7 +181,7 @@ export const copy = {
         text: "Send records to your paired Apple Watch and view the devices imported on your iPhone. This does not continuously measure the Watch’s own battery.",
       },
     ],
-    macKicker: "BETA TESTING · PC TRANSFER",
+    macKicker: "PC 1.0.0 · AUTOMATIC LOG COLLECTION",
     macTitle: "Less time finding logs.\nMore time seeing the story.",
     macIntro:
       "MochiLog Mac and Windows collect daily battery logs for you to receive and record when you open the mobile app. An optional tab also shows current cycle count and capacity, separate from history. Manual mobile import remains available without a computer.",
@@ -191,7 +191,7 @@ export const copy = {
       "Keeps physical devices distinct; iCloud sync remains optional",
     ],
     macFootnote:
-      "Beta for iOS/iPadOS 27, macOS 27 and Windows 11. Get the mobile beta from TestFlight and companions from GitHub. Daily log collection needs an unlocked device. Current values are not saved to history or iCloud. Testing continues ahead of the public release.",
+      "PC 1.0.0 is available on GitHub. Mobile 4.0.0 is being prepared for App Store review and is currently available through TestFlight. PC Transfer requires iOS/iPadOS 27, macOS 27 or Windows 11. Daily log collection needs an unlocked device. Current values are not saved to history or iCloud.",
     privacyKicker: "PRIVATE BY DESIGN",
     privacyTitle: "Your logs. Your device.",
     privacyText:
@@ -214,10 +214,10 @@ export const copy = {
         text: "Review and save capacity, cycles, and other available values. Add logs from different dates to see trends in the charts.",
       },
     ],
-    nextKicker: "IN DEVELOPMENT",
-    nextTitle: "More ways to make it yours.",
+    nextKicker: "MOCHILOG 4.0.0",
+    nextTitle: "More time with your records.",
     nextText:
-      "We’re improving multi-log imports, layouts across screen sizes, and support for eight languages with an in-app language setting. A public release date has not been announced.",
+      "4.0.0 adds automatic log collection, current battery readings and multi-record deletion. It is being prepared for App Store review, supports eight languages, and still works without a PC.",
     languages: "日本語 / English / 简体中文 / 繁體中文 / 한국어 / Español / Français / Deutsch",
     beta: "Check TestFlight",
     betaNote: "Beta features and available places depend on the current distribution.",
@@ -237,7 +237,7 @@ export const copy = {
       },
       {
         q: "Does MochiLog measure my battery automatically?",
-        a: "Normal records use imported Analytics logs. The companion beta can collect and transfer daily logs and offers an optional current-values view. Current values are not saved as history. Manual import still works on mobile without a computer.",
+        a: "Normal records use imported Analytics logs. The PC companion can collect and transfer daily logs and offers an optional current-values view. Current values are not saved as history. Manual import still works on mobile without a computer.",
       },
       {
         q: "Can I import multiple files?",

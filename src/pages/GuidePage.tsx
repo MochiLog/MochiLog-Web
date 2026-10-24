@@ -70,8 +70,8 @@ export function GuidePage() {
         <h2>{ja ? "PCとつなぐ、新しい使い方。" : "A new way to use your paired computer."}</h2>
         <p>
           {ja
-            ? "PC連携ベータでは、Mac・Windowsが日次の解析ログを収集し、スマホでアプリを開いたときにまとめて受信します。初回の信頼設定とQRペアリングを済ませれば、解析・記録はスマホに任せられます。PC連携を使わなくても、これまでの手動読み込みは使えます。"
-            : "In the companion beta, Mac or Windows collects daily Analytics files for your mobile app to receive when opened. Complete initial trust and QR pairing, then let mobile handle parsing and recording. Manual import remains available without a computer."}
+            ? "PC連携では、Mac・Windowsが日次の解析ログを収集し、スマホでアプリを開いたときにまとめて受信します。初回の信頼設定とQRペアリングを済ませれば、解析・記録はスマホに任せられます。PC連携を使わなくても、これまでの手動読み込みは使えます。"
+            : "The Mac or Windows companion collects daily Analytics files for your mobile app to receive when opened. Complete initial trust and QR pairing, then let mobile handle parsing and recording. Manual import remains available without a computer."}
         </p>
         <p>
           {ja
@@ -80,8 +80,8 @@ export function GuidePage() {
         </p>
         <p>
           {ja
-            ? "スマホの新しい4.0.0ベータ、MochiLog Mac 0.2.14／Windows 0.1.11以降が必要です。Windowsは11のみ対応し、初回USB信頼設定にはApple DevicesまたはApple公式のクラシック版iTunesを使用します。日次ログの収集にはロック解除が必要です。現在値の取得もOSや接続状態で失敗する場合があり、日次ログやAppleの公式診断と同じ意味ではありません。"
-            : "Use the new mobile 4.0.0 beta with MochiLog Mac 0.2.14 or Windows 0.1.11 or later. Windows 11 is required; initial USB trust uses Apple Devices or classic iTunes from Apple. Daily-log collection requires an unlocked device. Current-value acquisition can also fail depending on OS and connectivity, and is separate from daily logs or official Apple diagnosis."}
+            ? "スマホ版4.0.0とMochiLog Mac／Windows 1.0.0に対応しています。スマホ版はApp Storeへの審査提出準備中で、現在はTestFlightから利用できます。Windowsは11のみ対応し、初回USB信頼設定にはApple DevicesまたはApple公式のクラシック版iTunesを使用します。日次ログの収集にはロック解除が必要です。現在値の取得もOSや接続状態で失敗する場合があり、日次ログやAppleの公式診断と同じ意味ではありません。"
+            : "Use mobile 4.0.0 with MochiLog Mac or Windows 1.0.0. Mobile 4.0.0 is being prepared for App Store review and is currently available through TestFlight. Windows 11 is required; initial USB trust uses Apple Devices or classic iTunes from Apple. Daily-log collection requires an unlocked device. Current-value acquisition can also fail depending on OS and connectivity, and is separate from daily logs or official Apple diagnosis."}
         </p>
       </section>
       <section>
