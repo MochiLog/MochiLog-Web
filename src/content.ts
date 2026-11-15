@@ -59,7 +59,7 @@ export const copy = {
         text: "ペアリングしたApple Watchに記録を転送。iPhoneで読み込んだデバイスの状態を閲覧できます。Watch自体を常時測定する機能ではありません。",
       },
     ],
-    macKicker: "PC版 1.0.0 · 自動ログ収集",
+    macKicker: "PC版 1.0.1 · 自動ログ収集",
     macTitle: "ログを探す時間を、\n記録を見る時間に。",
     macIntro:
       "MochiLog Mac・Windowsが日次のバッテリー解析ログを集め、スマホで開くだけで受信・記録。さらに、現在の充放電回数や容量を履歴とは別に確認できます。スマホ単体の手動読み込みも、そのまま使えます。",
@@ -69,7 +69,7 @@ export const copy = {
       "現在のバッテリータブは設定でオンに。日々の記録と分けて確認",
     ],
     macFootnote:
-      "PC版1.0.0をGitHubで公開。スマホ4.0.0はApp Storeへの審査提出準備中で、現在はTestFlightから利用できます。PC連携はiOS/iPadOS 27、macOS 27・Windows 11が対象です。日次ログ収集にはロック解除が必要です。現在値は履歴・iCloudに保存しません。",
+      "PC版1.0.1をGitHub、スマホ版4.1.0をApp Storeで公開しています。PC連携はiOS/iPadOS 27、macOS 27・Windows 11が対象です。日次ログ収集にはロック解除が必要です。現在値は履歴・iCloudに保存しません。",
     privacyKicker: "PRIVATE BY DESIGN",
     privacyTitle: "解析は、あなたの端末で。",
     privacyText:
@@ -181,7 +181,7 @@ export const copy = {
         text: "Send records to your paired Apple Watch and view the devices imported on your iPhone. This does not continuously measure the Watch’s own battery.",
       },
     ],
-    macKicker: "PC 1.0.0 · AUTOMATIC LOG COLLECTION",
+    macKicker: "PC 1.0.1 · AUTOMATIC LOG COLLECTION",
     macTitle: "Less time finding logs.\nMore time seeing the story.",
     macIntro:
       "MochiLog Mac and Windows collect daily battery logs for you to receive and record when you open the mobile app. An optional tab also shows current cycle count and capacity, separate from history. Manual mobile import remains available without a computer.",
@@ -191,7 +191,7 @@ export const copy = {
       "Switch on Live Battery in settings to see current readings separately from history",
     ],
     macFootnote:
-      "PC 1.0.0 is available on GitHub. Mobile 4.0.0 is being prepared for App Store review and is currently available through TestFlight. PC Transfer requires iOS/iPadOS 27, macOS 27 or Windows 11. Daily log collection needs an unlocked device. Current values are not saved to history or iCloud.",
+      "PC 1.0.1 is available on GitHub, and mobile 4.1.0 is available on the App Store. PC Transfer requires iOS/iPadOS 27, macOS 27 or Windows 11. Daily log collection needs an unlocked device. Current values are not saved to history or iCloud.",
     privacyKicker: "PRIVATE BY DESIGN",
     privacyTitle: "Your logs. Your device.",
     privacyText:
