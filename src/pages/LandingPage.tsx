@@ -238,7 +238,7 @@ export const LandingPage = () => {
           <div className="mac-preview-device">Mac / Windows</div>
           <div className="mac-preview-link" />
           <div className="mac-preview-device">iPhone / iPad</div>
-          <div className="mac-preview-status">PC 1.0.1</div>
+          <div className="mac-preview-status">PC 1.0.3</div>
         </div>
       </section>
       <section className="privacy-band">

@@ -80,8 +80,8 @@ export function GuidePage() {
         </p>
         <p>
           {ja
-            ? "スマホ版4.1.0はApp Store、MochiLog Mac／Windows 1.0.1はGitHubから利用できます。Windowsは11のみ対応し、初回USB信頼設定にはApple DevicesまたはApple公式のクラシック版iTunesを使用します。日次ログの収集にはロック解除が必要です。現在値の取得もOSや接続状態で失敗する場合があり、日次ログやAppleの公式診断と同じ意味ではありません。"
-            : "Mobile 4.1.0 is available on the App Store, and MochiLog Mac and Windows 1.0.1 are available on GitHub. Windows 11 is required; initial USB trust uses Apple Devices or classic iTunes from Apple. Daily-log collection requires an unlocked device. Current-value acquisition can also fail depending on OS and connectivity, and is separate from daily logs or official Apple diagnosis."}
+            ? "スマホ版4.1.0はApp Store、MochiLog Mac／Windows 1.0.3はGitHubから利用できます。Windowsは11のみ対応し、初回USB信頼設定にはApple DevicesまたはApple公式のクラシック版iTunesを使用します。日次ログの収集にはロック解除が必要です。現在値の取得もOSや接続状態で失敗する場合があり、日次ログやAppleの公式診断と同じ意味ではありません。"
+            : "Mobile 4.1.0 is available on the App Store, and MochiLog Mac and Windows 1.0.3 are available on GitHub. Windows 11 is required; initial USB trust uses Apple Devices or classic iTunes from Apple. Daily-log collection requires an unlocked device. Current-value acquisition can also fail depending on OS and connectivity, and is separate from daily logs or official Apple diagnosis."}
         </p>
       </section>
       <section>
