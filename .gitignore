@@ -7,3 +7,4 @@
 .wrangler
 /test-results
 /playwright-report
+/Build/
